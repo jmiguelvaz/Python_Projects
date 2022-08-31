@@ -1,0 +1,1 @@
+print("El nombre de tu cerveza \nes '" + input("Cual es tu color favorito? ")+" " + input(" Cual es tu elemento favorito?") + "'\n¡Excelente nombre!"  )
