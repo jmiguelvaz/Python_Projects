@@ -1,31 +1,31 @@
 
-def conversor(tipo_pesos, valor_dolar):
-    pesos =input("Cuantos pesos " + tipo_pesos + " tienes : ")
+def converter(pesos_type, dolar_value):
+    pesos =input("how many " + pesos_type + " do you have? : ")
     pesos = float(pesos)
-    dolares = pesos/valor_dolar
-    dolares = round(dolares,2)
-    dolares = str(dolares)
-    print("Tienes $" + dolares + " dolares" )
+    dolars = pesos/dolar_value
+    dolars = round(dolars,2)
+    dolars = str(dolars)
+    print("You have $" + dolars + " US dolars" )
 
 menu = """
-Bienvenidos al conversor de divisas 💲💲💲
+Welcome to the curency converter 💲💲💲
 
-1- Pesos Colombianos
-2- Pesos Argentinos
-3- Pesos Mexicanos
+1- Colombian pesos
+2- Argentinian pesos
+3- Mexican pesos
 
-Elige una opcion: """
+Choose an option's number: """
 
 opcion = input(menu)
 
 if opcion == "1":
-   conversor("Colombianos", 3875)
+   converter("Colombian pesos", 3875)
 
 elif opcion == "2":
-    conversor("Argentinos", 65)
+    converter("Argentinian pesos", 65)
 
 elif opcion == "3":
-    conversor("Mexicanos", 24)
+    converter("Mexican pesos", 24)
 
 else:
-    print("ingrese una opcion disponible, por favor")
+    print("Please choose an available option")

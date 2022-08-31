@@ -1,11 +1,11 @@
-contador = 1
-print(contador)
-while contador < 1000:
-    #contador = contador + 1
-    contador += 1
-    print(contador)
+Counter = 1
+print(Counter)
+while Counter < 1000:
+    #counter = counter + 1
+    Counter += 1
+    print(Counter)
 
-    #for contador in range(1001):
+    #for counter in range(1001):
      #   print(contador)
 
         #a = list(range(1001))

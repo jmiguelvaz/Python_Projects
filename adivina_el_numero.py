@@ -1,25 +1,25 @@
 import random
 
 def run():
-    vidas= 5
-    numero_aleatorio = random.randint(1,100)
-    numero_elegido = int(input("elIge un numero: "))
-    while numero_elegido != numero_aleatorio:
-        if numero_elegido < numero_aleatorio:
-            vidas -= 1
-            print("Elige un numero mas alto")
-        if numero_elegido > numero_aleatorio:
-            print("Busca un numero mas bajo")
-            vidas -= 1
-        if vidas == 0:
+    lives= 5
+    Random_Number = random.randint(1,100)
+    Chosen_Number = int(input("Choose a number: "))
+    while Chosen_Number != Random_Number:
+        if Chosen_Number < Random_Number:
+            lives -= 1
+            print("pick a higher number")
+        if Chosen_Number > Random_Number:
+            print("pick a lower number")
+            lives -= 1
+        if lives == 0:
             print("GAME OVER")
             break
 
-        print("Tienes " + str(vidas) + " vidas")
-        numero_elegido = int(input("Elige otro numero: "))
+        print("you have " + str(lives) + " lives")
+        Chosen_Number = int(input("Choose another number: "))
         
-    if numero_elegido == numero_aleatorio:
-        print("GANASTE!")
+    if Chosen_Number == Random_Number:
+        print("YOU WIN!")
     
 
 if __name__=="__main__":

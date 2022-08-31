@@ -1,40 +1,40 @@
-texto=(input("ingresa un texto a eleccion: "))
-letras=[]
+text=(input("Please type a text of your liking: "))
+letters=[]
 
-texto=texto.lower()
+text=text.lower()
 
-letras.append(input("Ingresa la primera letra: ").lower())
-letras.append(input("Ingresa la segunda letra: ").lower())
-letras.append(input("Ingresa la tercera letra: ").lower())
-
-print("\n")
-print("CANTIDAD DE LETRAS: ")
-cantidad_letras1=texto.count(letras[0])
-cantidad_letras2=texto.count(letras[1])
-cantidad_letras3=texto.count(letras[2])
-
-print(f"Hemos encontrado la letra '{letras[0]}' repetida {cantidad_letras1} veces")
-print(f"Hemos encontrado la letra '{letras[1]}' repetida {cantidad_letras2} veces")
-print(f"Hemos encontrado la letra '{letras[2]}' repetida {cantidad_letras3} veces")
+letters.append(input("Choose a letter: ").lower())
+letters.append(input("choose another letter: ").lower())
+letters.append(input("choose one more letter: ").lower())
 
 print("\n")
-print("CANTIDAD DE PALABRAS: ")
-palabras=texto.split()
-print(f"Hemos encontrado {len(palabras)} palabras en tu texto")
+print("times your chosen letters repeat: ")
+letters_amount1=text.count(letters[0])
+letters_amount2=text.count(letters[1])
+letters_amount3=text.count(letters[2])
+
+print(f"We have found the letter: '{letters[0]}' {letters_amount1} times in your text")
+print(f"We have found the letter: '{letters[1]}' {letters_amount2} times in your text")
+print(f"we have found the letter: '{letters[2]}' {letters_amount3} times in your text")
 
 print("\n")
-print("LETRA DE INICIO Y FIN: ")
-letra_inicio=texto[0]
-letra_fin=texto[-1]
-print(f"La primera letra de tu texto es: '{letra_inicio}' y la ultima es: '{letra_fin}'")
+print("words amount: ")
+words=text.split()
+print(f"we have found {len(words)} words in your text")
 
 print("\n")
-print("TEXTO INVERTIDO: ")
-palabras.reverse()
-texto_invertido= ' '.join(palabras)
-print(f"Si ordenamos tu texto al reves va a decir: '{texto_invertido}'")
+print("first and last letter: ")
+first_letter=text[0]
+last_letter=text[-1]
+print(f"The first letter is: '{first_letter}' and the last one is: '{last_letter}'")
+
 print("\n")
-print("BUSCANDO LA PALABRA 'PYTHON': ")
-buscar_python= 'python' in texto
-dic={True:"si",False:"no"}
-print(f"La palabra 'python' {dic[buscar_python]} se encuentra en tu texto")
+print("Reversed text: ")
+words.reverse()
+reversed_text= ' '.join(words)
+print(f"This is how your text looks when is reversed: '{reversed_text}'")
+print("\n")
+print("LOOKING FOR THE WORD 'PYTHON': ")
+seek_python= 'python' in text
+dic={True:"is",False:"is not"}
+print(f"The word 'python' {dic[seek_python]} in your text")
